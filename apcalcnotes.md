@@ -10,7 +10,7 @@
 | Average rate of change | Instantaneous rate of change |
 | Length of line segments | Length of arcs |
 | Finite sums | Infinite sums |
-| Volume of geometric solids | Volume of arbitrary solids | 
+| Volume of regular solids | Volume of arbitrary solids | 
 
 #### 1.2-1.3 Limits
 
