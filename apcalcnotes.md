@@ -67,7 +67,9 @@ $$
 ### 2.2-2.4 Derivative Rules
 
 **Power Rule**: 
-$$\frac{d}{dx} x^n = nx^{n-1}$$
+$$
+\frac{d}{dx} x^n = nx^{n-1}
+$$
 
 **Trigonometric Functions**:
 $$ 
@@ -107,3 +109,38 @@ $$
 $$
 
 ### 2.5 Implicit Differentiation
+
+$$
+\begin{align*}
+\frac{d}{dx} \big(x\big) &= 1 \cdot \frac{dx}{dx} = 1 \\
+\frac{d}{dx} \big(y\big) &= 1 \cdot \frac{dy}{dx} \\
+\end{align*}
+$$
+
+<center>Example:</center> 
+
+$$
+\begin{align*}
+&\frac{d}{dx} \Big(y^2 + 1 = 4x^3 \Big) \\
+2y &\frac{dy}{dx} = 12x^2 \\
+&\frac{dy}{dx} = \frac{6x^2}{y} \\
+&\frac{dy}{dx}\bigg|_{(2, 5)} = \frac{6(2)^2}{5} 
+\end{align*}
+$$
+
+### 2.6 Related Rates
+
+Application of implicit differentiation
+
+$$
+A = \pi r^2 \\
+C = 2 \pi r 
+$$
+$$\text{Given } \frac{dC}{dt} = 2 \text{ find } \frac{dA}{dt}$$
+$$\frac{dC}{dt} = 2 \pi \frac{dr}{dt}$$
+$$\frac{dr}{dt} = \frac{1}{2 \pi} \frac{dC}{dt}$$
+$$\frac{dA}{dt} = 2 \pi r \frac{dr}{dt}$$
+$$\frac{dA}{dt} = 2 \pi r \frac{1}{2 \pi} \frac{dC}{dt}$$
+$$\frac{dA}{dt} = r \frac{dC}{dt} = 2r$$
+
+## Unit 3 
