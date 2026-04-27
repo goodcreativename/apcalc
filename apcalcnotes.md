@@ -24,11 +24,14 @@
 
 ### 1.4 Continuity and One-Sided Limits
 
--   One-sided limits approach a value from only one side, positive or negative: $\displaystyle \lim_{x \to c^+} f(x)$ or $\displaystyle \lim_{x \to c^-} f(x)$
--   **Continuity** - at a point $x = c$: $\displaystyle \lim_{x \to c^+} f(x)= \lim_{x \to c^-} f(x) = f(c)$ 
--   **Intermediate Value Theorem** - for a function $f$ continuous over $[a, b]$, $f(c) = k$ where $k \in [f(a),f(b)] $ such that $c \in [a, b]$
-    -   Function $f$ must pass through all $y$-values between $f(a)$ and $f(b)$ between $a$ and $b$
--   **Extreme Value Theorem** - a function $f$ continuous over $[a, b]$ has absolute minimum and absolute maximum over $[a, b]$
+**One-sided limits** approach a value from only one side, positive or negative: $\displaystyle \lim_{x \to c^+} f(x)$ or $\displaystyle \lim_{x \to c^-} f(x)$ 
+
+**Continuity** - at a point $x = c$: $\displaystyle \lim_{x \to c^+} f(x)= \lim_{x \to c^-} f(x) = f(c)$ 
+
+**Intermediate Value Theorem** - for a function $f$ continuous over $[a, b]$, $\exists$ $f(c) \in[f(a),f(b)]$ such that $c \in [a, b]$
+-   Function $f$ must pass through all $y$-values between $f(a)$ and $f(b)$ between $a$ and $b$
+
+**Extreme Value Theorem** - a function $f$ continuous over $[a, b]$ has absolute minimum and absolute maximum over $[a, b]$
 
 ### 1.5 Infinite Limits
 
@@ -62,7 +65,6 @@ x'(&t) = v(t)\\
 x''(&t) = v'(t) = a(t)\\
 \end{align*}
 $$
-
 
 ### 2.2-2.4 Derivative Rules
 
@@ -144,3 +146,67 @@ $$\frac{dA}{dt} = 2 \pi r \frac{1}{2 \pi} \frac{dC}{dt}$$
 $$\frac{dA}{dt} = r \frac{dC}{dt} = 2r$$
 
 ## Unit 3 
+
+### 3.1 Extreme Value Theorem
+
+**Extreme Value Theorem** - a function $f$ continuous over $[a, b]$ has absolute minimum and absolute maximum over $[a, b]$
+-   All extrema must appear at endpoints or critical points
+-   Function $f$ has critical point at $x = c$ if $f'(c) = 0$ or $f'(c)$ undefined  
+
+$$ f(x) = \frac{1}{3}x^3 - x^2 - 8x + 12 $$
+$$ f'(x) = x^2 - 2x - 8 $$
+$$ 0 = (x - 2)(x + 4) \to x = 2, -4 $$
+$$ f \text{ has critical points at } x = 2, -4 $$
+
+### 3.2 Mean Value Theorem and Rolle's Theorem 
+
+**Mean Value Theorem** - for a function $f$ continuous from $[a, b]$ and differentiable from $(a, b)$, $\exist$ $c \in (a, b)$ such that $\displaystyle f'(c) = \frac{f(b) - f(a)}{b - a}$
+-   There exists a point on a continuous and differentiable function where the slope equals average rate of change
+-   **Rolle's Theorem** - for a function $f$ continuous from $[a, b]$, differentiable from $(a, b)$, and $f(a) = f(b)$, $\exist$ $c \in (a, b)$ such that $f'(c) = 0$
+    -   MVT where $\text{AROC} = 0$
+-   **Differentiability** - function $f$ is differentiable if $f'$ is continuous
+
+### 3.3 First Derivative Test 
+
+**First Derivative Test** - function $f$ has relative maximum when $f'$ changes from positive to negative, and relative minimum when $f'$ changes from negative to positive
+-   **Relative Extrema** - $f'$ changes signs
+-   $f'$ can only change signs at a critical point
+
+$$ f(x) = \frac{1}{3}x^3 - \frac{5}{2}x^2 + 6x + 2 $$
+$$ f'(x) = x^2 - 5x + 6 $$
+$$ 0 = (x - 3)(x - 2) \to x = 3, 2 $$
+
+<center>
+
+| | $(-\infty, 2)$ | $(2, 3)$ | $(3, \infty)$ |
+| :---: | :---: | :---: | :---: |
+| $f'(x)$ | + | - | + |
+
+$f$ has relative maximum at $x = 2$ and relative minimum at $x = 3$
+
+</center>
+
+### 3.4 Second Derivative Test and Concavity
+
+**Second Derivative Test** - when $f'(c) = 0$, if $f''(c) > 0$ then $x = c$ is a relative maximum of $f$, if $f''(c) < 0$ then $x = c$ is a relative minumum of $f$  
+-   **Concavity** - $f$ has upwards concavity when $ f''(x) > 0 $ and downwards concavity if $ f''(x) < 0 $
+-   **Concavity Point** - function $f$ has concavity point at $x = c$ if $f''(c) = 0$ or $f''(c)$ undefined  
+-   **Point of Infection**  - $f''$ changes signs
+    -   $f''$ can only change signs at a concavity point
+
+$$ f(x) = \frac{1}{3}x^3 - \frac{5}{2}x^2 + 6x + 2 $$
+$$ f'(x) = x^2 - 5x + 6 $$
+$$ 0 = (x - 3)(x - 2) \to x = 3, 2 $$
+$$ f''(x) = 2x - 5 $$
+
+<center>
+
+| | $(-\infty, \frac{5}{2})$ | $(\frac{5}{2}, \infty)$ |
+| :---: | :---: | :---: |
+| $f'(x)$ | - | + |
+
+$f$ has relative maximum at $x = 2$ and relative minimum at $x = 3$
+
+</center>
+
+
