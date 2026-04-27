@@ -210,3 +210,30 @@ $f$ has relative maximum at $x = 2$ and relative minimum at $x = 3$
 </center>
 
 
+### 3.5 Limits at Infinity
+
+**Horizontal Asymptote** - function $f$ has horizontal asymptote at $y = c$ if $\displaystyle \lim_{x \to -\infty} f(x) = c$ or $\displaystyle \lim_{x \to \infty} f(x) = c$
+
+### 3.6 Derivatives of Position
+
+$$
+\begin{align*}
+&x(t) \to \text{position} \\
+&x'(t) = v(t) \to \text{velocity} \\
+&x''(t) = v'(t) = a(t) \to \text{acceleration} \\
+\end{align*}
+$$
+**Speed** - $|v(t)|$, speed increases when $\text{sign}(v(t)) = \text{sign}(a(t))$ and decreases when $\text{sign}(v(t)) = \text{sign}(a(t))$
+
+### 3.7 L'Hôpital
+
+$$
+\lim_{x \to c} \frac{f(x)}{g(x)} \to \frac{0}{0} \text{ or } \frac{\pm \infty}{\pm \infty} \implies \lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f'(x)}{g'(x)}
+$$
+$$
+\lim_{x \to 0} \frac{\sin(x)}{x} = \lim_{x \to 0} \frac{\cos(x)}{1} = 1
+$$
+
+### 3.8 Optimization
+
+
