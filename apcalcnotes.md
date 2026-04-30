@@ -106,7 +106,24 @@ $$
 
 -   **Exponential**:
 $$
-\frac{d}{dx} \big(b^x\big) =  b^x \cdot \ln b
+\frac{d}{dx} \big(b^x\big) = b^x \cdot \ln b
+$$
+
+-   **Inverse Trigonometric**:
+$$ 
+\begin{align*}
+\frac{d}{dx} \arcsin(x) &= \frac{1}{\sqrt{1 - x^2}} & 
+\frac{d}{dx} \arccos(x) &= \frac{-1}{\sqrt{1 - x^2}}\\ 
+\frac{d}{dx} \arctan(x) &= \frac{1}{1 + x^2} & 
+\frac{d}{dx} \text{arccot}(x) &= \frac{-1}{1 + x^2} \\
+\frac{d}{dx} \text{arcsec}(x) &= \frac{1}{|u|\sqrt{x^2 - 1}} & 
+\frac{d}{dx} \text{arccsc}(x) &= \frac{-1}{|u|\sqrt{x^2 - 1}} \\
+\end{align*}
+$$
+
+-   **General Inverse Functions**:
+$$
+\frac{d}{dx} f^{-1}(x) = \frac{1}{f'(f^{-1}(x))}
 $$
 
 ### 2.5 Implicit Differentiation
@@ -279,8 +296,33 @@ $$
     -   Must change integral bounds in terms of $u$ 
 $$
 \begin{align*}
-f(g(x)) \to dy &= f'(g(x))g'(x)dx \\
-g(x) = u \ \ &, \ \ g'(x)dx = du \\
-f(u) \to dy &= f'(u)du
+f(g(x)) \to dy = &f'(g(x))g'(x)dx \\
+g(x) = u, \ \ \ \ \ \ \ &g'(x)dx = du \\
+f(u) \to dy = &f'(u)du \\
+\int f'(u)du = &f(u) + c
+\end{align*}
+$$
+
+## Unit 5: Integration Application
+
+### 5.1-5.2 Logarithm Integration
+
+$$
+\int \frac{1}{x} dx = \ln |x| + c
+$$
+
+### 5.3-5.4 Exponential Integration
+
+$$
+\int b^x dx = \frac{b^x}{\ln |b|} + c
+$$
+
+### 5.6-5.7 Inverse Trig Integration
+
+$$ 
+\begin{align*}
+\int \frac{1}{\sqrt{a^2 - x^2}} dx &= \arcsin \frac{x}{a} + c \\
+\int \frac{1}{x\sqrt{x^2 - a^2}} dx &= \text{arcsec} \frac{x}{a} + c \\
+\int \frac{1}{a^2 + x^2} dx &= \frac{1}{a} \arctan \frac{x}{a} + c \\
 \end{align*}
 $$
