@@ -140,7 +140,7 @@ $$
 
 -   **Related Rates** - application of implicit differentiation typically on variables related by some equation changing over time: $A = \pi r^2$, $a^2 + b^2 = c^2$, etc.
 
-## Unit 3: Derivative Application
+## Unit 3: Derivation Application
 
 ### 3.1 Extreme Value Theorem
 
@@ -355,3 +355,48 @@ $$
 -   Integrate differential equations with all instance of variables isolated on one side
     -   $\displaystyle \frac{dy}{dx} = xy \to \frac{dy}{y} = x dx \to \int \frac{dy}{y} = \int x dx$
 
+## Unit 7: Integration Application
+
+### 7.1 Area Between Curves 
+
+-   Area between functions $f(x)$ and $g(x)$ where $f(x) > g(x)$ on $[a, b]$ = $\displaystyle \int_a^b \big(f(x) - g(x)\big)dx$
+
+### 7.2-7.3 Area of Regions
+
+-   **Disc Method**:
+$$ 
+\text{Area of disc} = \pi r^2 \\
+\sum \text{Area of disc} = \pi \int \big(r(x)\big)^2 dx
+$$
+
+-   **Washer Method**:
+$$ 
+\text{Area of washer} = \pi (R^2 - r^2)\\
+\sum \text{Area of washer} = \pi \int \big(R(x)\big)^2 - \big(r(x)\big)^2 dx
+$$
+
+-   **Shell Method**:
+$$ 
+\text{Surface Area of cylinder} = 2 \pi rh\\
+\sum \text{SA}  = 2 \pi \int \big(r(x) \cdot h(x)\big) dx
+$$
+
+-   **Cross Sections** - given a cross sectional area $A(y)$ as a function of $f(x)$: $\displaystyle \text{Volume} = \int A(f(x)) dx$
+
+
+### 7.4 Arc Length and Surface Area
+
+-   **Arc Length**:
+$$
+\begin{align*}
+a^2 + b^2 &= c^2 \\
+d &= \sqrt{(\Delta x)^2 + (\Delta y)^2} \\
+s &= \int \sqrt{dx^2 + dy^2} \\
+s &= \int \Bigg(\sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\Bigg) dx \\
+\end{align*}
+$$
+
+-   **Surface Area**:
+$$
+\text{SA} = 2 \pi \int \Bigg(r(x) \sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\Bigg) dx 
+$$
