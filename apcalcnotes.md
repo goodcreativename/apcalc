@@ -335,3 +335,23 @@ $$
 
 ![slope field image for dy/dx = y*sin x - (cos x)*e^(-cos x)](https://www.savemyexams.com/ap/maths/college-board/calculus-ab/20/revision-notes/differential-equations/first-order-differential-equations/slope-fields/)
 
+-   **Euler's Method** - Iteratively determine particular solution of differential equation using multiple linear approximations: $\displaystyle f_\text{next}(x) = f(x) + \frac{dy}{dx}\Big|_{(x, y)} \Delta x$
+
+### 6.2 Exponential Growth and Decay
+
+-   Rate of change proportional to current value
+$$
+\begin{align*}
+\frac{d}{dt}& (y = ke^t) \\
+\frac{dy}{dt}& = ke^t \\
+\frac{dy}{dt}& = ky
+\end{align*}
+$$
+
+-   **Logistic Differential Equation** - exponential growth with a load limit $L$, starting value $a$, and growth rate $k$: $\displaystyle \frac{dy}{dt} = ky(1 - \frac{y}{L})$, $\displaystyle y(t) = \frac{L}{1 + ae^{-kt}}$
+
+### 6.3 Separation of Variables
+
+-   Integrate differential equations with all instance of variables isolated on one side
+    -   $\displaystyle \frac{dy}{dx} = xy \to \frac{dy}{y} = x dx \to \int \frac{dy}{y} = \int x dx$
+
