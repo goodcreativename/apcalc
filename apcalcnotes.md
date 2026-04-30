@@ -326,3 +326,12 @@ $$
 \int \frac{1}{a^2 + x^2} dx &= \frac{1}{a} \arctan \frac{x}{a} + c \\
 \end{align*}
 $$
+
+## Unit 6: Differential Equations
+
+### 6.1 Slope Fields
+
+-   **Slope Field** - each point on a coordinate system represents the slope of a differential equation
+
+![slope field image for dy/dx = y*sin x - (cos x)*e^(-cos x)](https://www.savemyexams.com/ap/maths/college-board/calculus-ab/20/revision-notes/differential-equations/first-order-differential-equations/slope-fields/)
+
