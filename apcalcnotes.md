@@ -604,3 +604,11 @@ e^x &= \sum_{n = 0}^\infty \frac{x^n}{n!} \\
 $$
 
 -   Function composition works within power series: $\displaystyle e^{2x} = \sum_{n = 0}^\infty \frac{(2x)^n}{n!}$
+
+## Unit 10: Polar, Parametric, and Vector Functions
+
+### 10.1 - 10.3 Parametric Equations 
+
+-   **Parametric Equations** - sets of equations with more than one dependent variable, independent usually being time $t$
+    -   Derivative where curve is given by $x = f(t)$ and $y = g(t)$: $\displaystyle \frac{dy}{dx} = \frac{dy/dt}{dx/dt}$
+    -   Second derivative: $\displaystyle \frac{d^2y}{dx^2} = \frac{\frac{d}{dt} (dy/dx)}{dx/dt}$
