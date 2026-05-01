@@ -533,7 +533,7 @@ $$
 
 -   **Ratio Test** - series $\displaystyle \sum a_n$:
     -   Converges if $\displaystyle \lim_{n \to \infty} \Big|\frac{a_{n + 1}}{a_n}\Big| < 1$
-    
+
     -   Diverges if $\displaystyle \lim_{n \to \infty} \Big|\frac{a_{n + 1}}{a_n}\Big| > 1$
 
 -   **Root Test** - series $\displaystyle \sum a_n$:
