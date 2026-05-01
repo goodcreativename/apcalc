@@ -612,3 +612,32 @@ $$
 -   **Parametric Equations** - sets of equations with more than one dependent variable, independent usually being time $t$
     -   Derivative where curve is given by $x = f(t)$ and $y = g(t)$: $\displaystyle \frac{dy}{dx} = \frac{dy/dt}{dx/dt}$
     -   Second derivative: $\displaystyle \frac{d^2y}{dx^2} = \frac{\frac{d}{dt} (dy/dx)}{dx/dt}$
+
+-   **Vector** - ordered list of points
+    -   Position vector: $\displaystyle \vec{x} = \langle x(t), y(t) \rangle$
+    -   Velocity vector: $\displaystyle \vec{v} = \langle x'(t), y'(t) \rangle$
+    -   Acceleration vector: $\displaystyle \vec{a} = \langle x''(t), y''(t) \rangle$
+    -   **Magnitude** of vector - distance to origin: $\displaystyle \sqrt{(x(t))^2 + (y(t))^2}$
+        -   **Speed** - magnitude of velocity vector
+
+-   **Arc Length** - $\displaystyle \int \sqrt{(x(t))^2 + (y(t))^2} dt$
+
+### 10.4-10.5 Polar Functions
+
+-   **Polar Coordinates** - point on plane represented by radial distance $r$ and angle $\theta$ instead of $x$ and $y$
+    -   $r = \sqrt{x^2 + y^2}$
+    -   $\theta = \arctan(\frac{y}{x})$
+
+-   Polar function $r = f(\theta)$, $\theta$ can be treated as parameter of $x$ and $y$
+    -   Derivative: $\displaystyle \frac{dy}{dx} = \frac{dy/d\theta}{dx/d\theta}$
+    -   Area bounded by polar curve: 
+
+$$
+\begin{align*}
+A_C = \pi r^2 \\
+A_C = \frac{1}{2} (\theta = 2 \pi) r^2 \\
+A_S = \frac{1}{2} \theta r^2 \\
+dA_S = \frac{1}{2} r^2 d\theta \\
+A = \frac{1}{2} \int r^2 d\theta
+\end{align*}
+$$
