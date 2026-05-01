@@ -235,22 +235,22 @@ $$
     -   $\displaystyle \frac{d}{dx} \big(F(x)\big) = \frac{d}{dx} \big(F(x) + 1\big) = ... = \frac{d}{dx} \big(F(x) + c\big)$
 
 -   **Indefinite Integral** - finding general function $F(x) + c$ for $f(x)$
-    -   Notation: $\displaystyle \sum f(x) \Delta x \to \int f(x) dx$ 
+    -   Notation: $\displaystyle \sum f(x) \ \Delta x \to \int f(x) \ dx$ 
     -   Reverse chain rule, power rule
 
 ### 4.2 Approximating Area 
 
 -   **Riemann Sums** - Area under curve approximated by regular shapes
-    -   Left - $\displaystyle \sum f(x_i) \Delta x$
-    -   Right - $\displaystyle \sum f(x_{i+1}) \Delta x$
-    -   Midpoint - $\displaystyle \sum f(\frac{x_i + x_{i+1}}{2}) \Delta x$
-    -   Trapezoid - $\displaystyle \sum \frac{f(x_i) + f(x_{i+1})}{2} \Delta x$
+    -   Left - $\displaystyle \sum f(x_i) \ \Delta x$
+    -   Right - $\displaystyle \sum f(x_{i+1}) \ \Delta x$
+    -   Midpoint - $\displaystyle \sum f(\frac{x_i + x_{i+1}}{2}) \ \Delta x$
+    -   Trapezoid - $\displaystyle \sum \frac{f(x_i) + f(x_{i+1})}{2} \ \Delta x$
 
 ### 4.3 Definite Integral
 
 -   **Definite Integral** - evaluating integral with bounds 
 $$
-\lim_{\Delta x \to 0} \sum_{i = a}^b f(x_i) \Delta x = \int_a^b f(x) dx \\
+\lim_{\Delta x \to 0} \sum_{i = a}^b f(x_i) \ \Delta x = \int_a^b f(x) \ dx \\
 $$ 
 
 ### 4.4 The Fundamental Theorem of Calculus
@@ -258,35 +258,35 @@ $$
 -   **The Fundamental Theorem of Calculus** - differentiation and integration are opposites:
 $$
 \begin{align*}
-\lim_{\Delta x \to 0} \sum_{i = a}^b f(x_i) \Delta x &= \int_a^b f(x) dx \\
+\lim_{\Delta x \to 0} \sum_{i = a}^b f(x_i) \ \Delta x &= \int_a^b f(x) \ dx \\
 &= \Big[F(x) \Big|_a^b \\
 &= F(b) - F(a)
 \end{align*}
 $$ 
 
 -   Particle Motion -
-    -   Distance - sum of size of all infinitesimal steps: $\displaystyle \int \big|v(t)\big| dt $
-    -   Displacement - total change in position: $\displaystyle v(t) = x'(t) \implies \int_a^b v(t) dt = x(b) - x(a) = \Delta x(t)$ 
-    -   Position - final $x$ value: $\displaystyle x(t) = x_0(t) + \int_a^b v(t) dt$ 
+    -   Distance - sum of size of all infinitesimal steps: $\displaystyle \int \big|v(t)\big| \ dt $
+    -   Displacement - total change in position: $\displaystyle v(t) = x'(t) \implies \int_a^b v(t) \ dt = x(b) - x(a) = \Delta x(t)$ 
+    -   Position - final $x$ value: $\displaystyle x(t) = x_0(t) + \int_a^b v(t) \ dt$ 
 
 -   Bounds Manipulation
 $$
 \begin{align*}
-\int_a^b f(x) dx &= - \int_b^a f(x) dx \\
+\int_a^b f(x) \ dx &= - \int_b^a f(x) \ dx \\
 F(b) - F(a) &= -\big(F(a) - F(b)\big) \\
 \\
-\int_a^b f(x) dx &= \int_a^c f(x) dx + \int_c^b f(x) dx \\
+\int_a^b f(x) \ dx &= \int_a^c f(x) dx + \int_c^b f(x) \ dx \\
 F(b) - F(a) &= \big(F(b) - F(c)\big) - \big(F(c) - F(a)\big) \\
 \end{align*}
 $$
 
--   **Second Fundamental Theorem of Calculus** - for all $x$ on a continuous interval of function $f$ including $a$, $\displaystyle \frac{d}{dx} \Bigg(\int_a^{b(x)} f(t)dt\Bigg) = f(x) \cdot b'(x) $
+-   **Second Fundamental Theorem of Calculus** - for all $x$ on a continuous interval of function $f$ including $a$, $\displaystyle \frac{d}{dx} \Bigg(\int_a^{b(x)} f(t) \ dt\Bigg) = f(x) \cdot b'(x) $
 
 -   **Average Value** 
 $$
 \begin{align*}
 \text{Standard Average} &= \frac{1}{i}\sum_{n=0}^i a_n \\
-\text{Function Average} &= \frac{1}{b - a}\int_a^b f(x) dx
+\text{Function Average} &= \frac{1}{b - a}\int_a^b f(x) \ dx
 \end{align*}
 $$
 
@@ -296,10 +296,10 @@ $$
     -   Must change integral bounds in terms of $u$ 
 $$
 \begin{align*}
-f(g(x)) \to dy = &f'(g(x))g'(x)dx \\
-g(x) = u, \ \ \ \ \ \ \ &g'(x)dx = du \\
-f(u) \to dy = &f'(u)du \\
-\int f'(u)du = &f(u) + c
+f(g(x)) \to dy = &f'(g(x))g'(x) \ dx \\
+g(x) = u, \ \ \ \ \ \ \ &g'(x) \ dx = du \\
+f(u) \to dy = &f'(u) \ du \\
+\int f'(u) \ du = &f(u) + c
 \end{align*}
 $$
 
@@ -308,22 +308,22 @@ $$
 ### 5.1-5.2 Logarithm Integration
 
 $$
-\int \frac{1}{x} dx = \ln |x| + c
+\int \frac{1}{x} \ dx = \ln |x| + c
 $$
 
 ### 5.3-5.4 Exponential Integration
 
 $$
-\int b^x dx = \frac{b^x}{\ln |b|} + c
+\int b^x \ dx = \frac{b^x}{\ln |b|} + c
 $$
 
 ### 5.6-5.7 Inverse Trig Integration
 
 $$ 
 \begin{align*}
-\int \frac{1}{\sqrt{a^2 - x^2}} dx &= \arcsin \frac{x}{a} + c \\
-\int \frac{1}{x\sqrt{x^2 - a^2}} dx &= \text{arcsec} \frac{x}{a} + c \\
-\int \frac{1}{a^2 + x^2} dx &= \frac{1}{a} \arctan \frac{x}{a} + c \\
+\int \frac{1}{\sqrt{a^2 - x^2}} \ dx &= \arcsin \frac{x}{a} + c \\
+\int \frac{1}{x\sqrt{x^2 - a^2}} \ dx &= \text{arcsec} \frac{x}{a} + c \\
+\int \frac{1}{a^2 + x^2} \ dx &= \frac{1}{a} \arctan \frac{x}{a} + c \\
 \end{align*}
 $$
 
@@ -353,35 +353,35 @@ $$
 ### 6.3 Separation of Variables
 
 -   Integrate differential equations with all instance of variables isolated on one side
-    -   $\displaystyle \frac{dy}{dx} = xy \to \frac{dy}{y} = x dx \to \int \frac{dy}{y} = \int x dx$
+    -   $\displaystyle \frac{dy}{dx} = xy \to \frac{dy}{y} = x dx \to \int \frac{dy}{y} = \int x \ dx$
 
 ## Unit 7: Integration Application
 
 ### 7.1 Area Between Curves 
 
--   Area between functions $f(x)$ and $g(x)$ where $f(x) > g(x)$ on $[a, b]$ = $\displaystyle \int_a^b \big(f(x) - g(x)\big)dx$
+-   Area between functions $f(x)$ and $g(x)$ where $f(x) > g(x)$ on $[a, b]$ = $\displaystyle \int_a^b \big(f(x) - g(x)\big) \ dx$
 
 ### 7.2-7.3 Area of Regions
 
 -   **Disc Method**:
 $$ 
 \text{Area of disc} = \pi r^2 \\
-\sum \text{Area of disc} = \pi \int \big(r(x)\big)^2 dx
+\sum \text{Area of disc} = \pi \int \big(r(x)\big)^2 \ dx
 $$
 
 -   **Washer Method**:
 $$ 
 \text{Area of washer} = \pi (R^2 - r^2)\\
-\sum \text{Area of washer} = \pi \int \big(R(x)\big)^2 - \big(r(x)\big)^2 dx
+\sum \text{Area of washer} = \pi \int \big(R(x)\big)^2 - \big(r(x)\big)^2 \ dx
 $$
 
 -   **Shell Method**:
 $$ 
 \text{Surface Area of cylinder} = 2 \pi rh\\
-\sum \text{SA}  = 2 \pi \int \big(r(x) \cdot h(x)\big) dx
+\sum \text{SA}  = 2 \pi \int \big(r(x) \cdot h(x)\big) \ dx
 $$
 
--   **Cross Sections** - given a cross sectional area $A(y)$ as a function of $f(x)$: $\displaystyle \text{Volume} = \int A(f(x)) dx$
+-   **Cross Sections** - given a cross sectional area $A(y)$ as a function of $f(x)$: $\displaystyle \text{Volume} = \int A(f(x)) \ dx$
 
 
 ### 7.4 Arc Length and Surface Area
@@ -389,7 +389,7 @@ $$
 -   **Arc Length**:
 $$
 \begin{align*}
-a^2 + b^2 &= c^2 \\
+c^2 &= a^2 + b^2 \\
 d &= \sqrt{(\Delta x)^2 + (\Delta y)^2} \\
 s &= \int \sqrt{dx^2 + dy^2} \\
 s &= \int \Bigg(\sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\Bigg) dx \\
@@ -400,3 +400,207 @@ $$
 $$
 \text{SA} = 2 \pi \int \Bigg(r(x) \sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\Bigg) dx 
 $$
+
+## Unit 8 Advanced Integration 
+
+### 8.1 Basic Integration
+
+-   Expand numerator
+-   Separate numerator
+-   Complete the square
+-   Rational long division
+-   Add and subtract from numerator
+-   Use trig identities
+-   Multiply and divide by conjugate
+
+### 8.2 Integration by Parts
+
+-   **Integration by Parts**:
+$$ 
+\frac{d}{dx} \Big(f(x) \cdot g(x)\Big) = f'(x) \cdot g(x) + f(x) \cdot g'(x) \\
+uv = u \ dv + v \ du \\
+u \ dv = uv - v \ du \\
+\int u \ dv = uv - \int v \ du \\
+$$
+
+-   **Tabular Method**:
+    -   Add row product per column, skipping one row down for $dv$ column  
+
+| $\text{sign}$ | $u$ | $dv$ |
+| :---: | :---: | :---: |
+| $+$ | $u$ | $dv$ |
+| $-$ | $du$ | $\int dv$ |
+| $+$ | $ddu$ | $\int \int dv$ |
+| $...$ | $...$ | $...$ |
+| $...$ | 0 | $...$ |
+
+-   **Recursive Integration**:
+$$
+\begin{align*}
+I = \int u \ dv &= uv - \int \Big(du \ v\Big) \\
+\int du \ v &= ddu \int v - \int \Big(ddu \int v\Big) \\
+\int ... &= ... \ - c \cdot I \\
+(c+1) \cdot I &= ...
+\end{align*}
+$$
+
+### 8.5 Partial Fractions
+
+-   **Partial Fraction Decomposition**:
+$$ 
+\begin{align*}
+\frac{A}{P} + \frac{B}{Q} = \frac{AQ}{PQ} + \frac{BP}{PQ} &= \frac{AQ + BP}{PQ} \\
+N &= AQ + BP \\
+\int \frac{N}{PQ} \ dx &= \int \frac{A}{P} \ dx + \int \frac{B}{Q} \ dx \\
+B &= \frac{N}{P(x)\big|_{x, Q(x) = 0}} \\
+A &= \frac{N}{Q(x)\big|_{x, P(x) = 0}} \\
+\end{align*}
+$$
+
+### 8.6 Trig Substitution
+
+-   **Trig Substitution** - using trig identities to replace radicals with known trig function:
+$$
+\begin{align*}
+\sqrt{a^2 - x^2} &\to 1 - \sin^2 \theta \\
+\sqrt{a^2 + x^2} &\to 1 + \tan^2 \theta \\
+\sqrt{x^2 - a^2} &\to \sec^2 \theta - 1 \\
+\end{align*}
+$$
+
+### 8.8 Improper Integrals 
+
+-   **Improper Integrals** - integrals that contain value within bounds that are undefined in the integrand
+    -   $\displaystyle \int_0^\infty f(x) \ dx \to \lim_{b \to \infty} \int_0^b f(x) \ dx \to \lim_{b \to \infty} \Big[F(x)\Big|_0^b \to \lim_{b \to \infty} F(b) - F(0)$
+
+## Unit 9 Infinite Sequences and Series
+
+### 9.1 Sequences 
+
+-   **Sequence** - a function whose domain is $\mathbb{N}$
+
+-   **Convergence of an Infinite Series** -
+    -   **Convergence** - sequence approaches a limiting value at infinity
+    -   **Divergence** - sequence does not have a limit at infinity
+
+-   **Absolute Value Theorem** - $\displaystyle \lim_{n \to \infty} \big|a_n\big| = 0 \implies \lim_{n \to \infty} a_n = 0$
+
+-   **Monotonic** - all terms are all nonincreasing or all nondecreasing
+
+-   **Bounded** - bounded above if all terms $\le$ constant $c$ and bounded below if all terms $\ge c$ 
+
+### 9.2 Infinite Series 
+
+-   **Series** - sum of first $n$ terms of sequence: $\displaystyle \sum_{i = 1}^n a_i$
+    -   **Infinite Series** - sum of all terms in a sequence: $\displaystyle \sum_{n}^\infty a_n$
+        -   **Convergence** - sum approaches a limiting value at infinity
+        -   **Divergence** - sum does not have a limit at infinity
+
+
+### 9.2 - 9.6 Convergence Tests 
+
+-   **Telescoping Series** - series with terms canceling, leaving a finite sum
+    -   Often requires partial fraction decomposition
+    -   Finite sum $\to$ always converge
+
+-   **Geometric Series** - series with common ratio between terms: $\displaystyle \sum_{n}^\infty ar^n$
+    -   Converges if $|r| < 1$, to $\displaystyle \frac{a}{1 - r}$
+    -   Diverges otherwise, $|r| \ge 1$
+
+-   **$n$-th Term Test** - if $\displaystyle \lim_{n \to \infty} a_n \ne 0$, then $\displaystyle \sum_{n}^\infty a_n$ diverges
+
+-   **$p$-Series** - $\displaystyle \sum_n^\infty \frac{1}{n^p}$
+    -   Converges if $p > 1$
+    -   Diverges otherwise, $p \le 1$
+
+-   **Integral Test** - $f(n) = a_n$, if $f(n)$ is positive, continuous, and decreasing for $k \ge 1$, then $\displaystyle \sum_{n = k}^\infty a_n$ and $\displaystyle \int_{k}^\infty f(x) \ dx$ share convergence behavior
+
+-   **Direct Comparison Test** - $0 < a_n < b_n \ \forall \ n$:
+$$ 
+\begin{align*}
+\sum_{n = k}^\infty b_n \ \ \text{convergence} &\implies \displaystyle \sum_{n = k}^\infty a_n \ \ \text{convergence} \\
+\sum_{n = k}^\infty a_n \ \ \text{divergence} &\implies \displaystyle \sum_{n = k}^\infty b_n \ \ \text{divergence}
+\end{align*}
+$$
+
+-   **Limit Comparison Test** - if $a_n > 0$ and $\displaystyle b_n > 0 \ \forall \ n$ and $\displaystyle \lim_{n \to \infty} \frac{a_n}{b_n}$ finite and positive, then $\displaystyle \sum_{n = k}^\infty b_n$ and $\displaystyle \sum_{n = k}^\infty a_n$ share convergence behavior
+
+-   **Alternating Series Test** - series that alternates signs: $a_n > 0$, $\displaystyle \sum_{n = 1}^\infty (-1)^n a_n$ 
+    -   Converges if $\displaystyle \lim_{n \to \infty} a_n = 0$ and $a_{n + 1} \le a_n \ \forall \ n$ 
+    -   **Absolute Convergence** - series $\displaystyle \sum a_n$ is absolutely convergent if $\displaystyle \sum |a_n|$ converges
+    -   **Conditional Convergence** - series $\displaystyle \sum a_n$ is conditionally convergent if $\displaystyle \sum a_n$ converges but $\displaystyle \sum |a_n|$ diverges 
+    -   **Alternating Series Remainder** - sum of alternating series $S$ can be approximated by $|S - S_n| \le a_{n + 1}$
+
+-   **Ratio Test** - series $\displaystyle \sum a_n$:
+    -   Converges if $\displaystyle \lim_{n \to \infty} \Big|\frac{a_{n + 1}}{a_n}\Big| < 1$
+    
+    -   Diverges if $\displaystyle \lim_{n \to \infty} \Big|\frac{a_{n + 1}}{a_n}\Big| > 1$
+
+-   **Root Test** - series $\displaystyle \sum a_n$:
+    -   Converges if $\displaystyle \lim_{n \to \infty} \sqrt[n]{|a_n|} < 1$
+    -   Diverges if $\displaystyle \lim_{n \to \infty} \sqrt[n]{|a_n|} > 1$
+
+### 9.7 Taylor Poloynomials and Approximation
+
+-   Linear approximation as a first degree polynomial approximation $\to$ matches value and slope at point
+-   **Taylor Polynomial** - approximation at $x = c$:
+$$
+P_a(x) = \sum_{n = 0}^a \frac{f^n(c)}{n!} (x - c)^n
+$$
+-   **Maclaurin Polynomial** - approximation at $x = 0$:
+$$
+P_a(x) = \sum_{n = 0}^a \frac{f^n(0)}{n!} x^n
+$$
+
+-   **Lagrange Error Bound** - difference between function Taylor polynomial approximation:
+$$
+|f(x) - P_n(x)| = \frac{\displaystyle \max_{[c, x]}\big|f^{n + 1(x)}\big|}{(n + 1)!} (x - c)^{n + 1}
+$$
+
+### 9.8 Power Series
+
+-   **Power Series** - infinite polynomial approximation centered at $x = c$:
+$$
+\sum_{n = 0}^\infty a_n (x - c)^n
+$$
+
+-   **Radius of Convergence** - $R > 0$ such that the power series converges for $|x - c| < R$ and diverges otherwise
+    -   Series converges for all $x$
+    -   Series converges only at $x = c$
+
+-   **Interval of Convergence** - exact bounds on $x$ where power series converges
+    -   On interval on convergence, series is differentiable and continuous
+
+-   Series derives and antiderives with respect to $x$, treating $n$ as a real number
+    -   Derivative and antiderivative have same bounds, but inclusivity must be rechecked
+
+### 9.9 Functions as Power Series
+
+-   Function into geometric series:
+$$
+\begin{align*}
+\sum_{n = 1}^\infty ar^n &= \frac{a}{1 - r} \\
+\frac{a}{1 - x} &= \sum_{n = 1}^\infty ax^n 
+\end{align*}
+$$
+
+### 9.10 Taylor Series
+
+-   **Taylor Series** - infinite polynomial approximation of a function centered at $x = c$:
+$$
+\begin{align*}
+P_a(x) &= \sum_{n = 0}^a \frac{f^n(c)}{n!} (x - c)^n \\
+f(x) &= \sum_{n = 0}^\infty \frac{f^n(c)}{n!} (x - c)^n
+\end{align*}
+$$
+-   Examples:
+$$
+\begin{align*}
+e^x &= \sum_{n = 0}^\infty \frac{x^n}{n!} \\
+\sin x &= \sum_{n = 0}^\infty (-1)^n \frac{x^{2n + 1}}{(2n + 1)!} \\
+\cos x &= \sum_{n = 0}^\infty (-1)^n \frac{x^{2n}}{(2n)!} \\
+\frac{1}{x} &= \sum_{n = 0}^\infty (-1)^n (x - 1)^n
+\end{align*}
+$$
+
+-   Function composition works within power series: $\displaystyle e^{2x} = \sum_{n = 0}^\infty \frac{(2x)^n}{n!}$
