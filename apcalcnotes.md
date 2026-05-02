@@ -540,7 +540,7 @@ $$
     -   Converges if $\displaystyle \lim_{n \to \infty} \sqrt[n]{|a_n|} < 1$
     -   Diverges if $\displaystyle \lim_{n \to \infty} \sqrt[n]{|a_n|} > 1$
 
-### 9.7 Taylor Poloynomials and Approximation
+### 9.7 Taylor Polynomials and Approximation
 
 -   Linear approximation as a first degree polynomial approximation $\to$ matches value and slope at point
 -   **Taylor Polynomial** - approximation at $x = c$:
