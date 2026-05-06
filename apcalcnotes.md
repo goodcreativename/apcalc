@@ -418,8 +418,8 @@ $$
 -   **Integration by Parts**:
 $$ 
 \frac{d}{dx} \Big(f(x) \cdot g(x)\Big) = f'(x) \cdot g(x) + f(x) \cdot g'(x) \\
-uv = u \ dv + v \ du \\
-u \ dv = uv - v \ du \\
+d (uv) = u \ dv + v \ du \\
+u \ dv = d (uv) - v \ du \\
 \int u \ dv = uv - \int v \ du \\
 $$
 
