@@ -832,5 +832,3 @@ $$
 $$
 \frac{d}{dx} \Big( \vec{u}(t) \times \vec{v}(t) \Big) =\vec{u}'(t) \times \vec{v}(t) + \vec{u}(t) \times \vec{v}'(t)
 $$
-
-
