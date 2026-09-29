@@ -1,8 +1,8 @@
-# AP Calculus Notes
+# Calculus Notes
 
-## Unit 1: Limits
+## Limits
 
-### 1.1 Calculus Principles
+### Calculus Principles
 
 | Without Calculus | With Calculus |
 | --- | --- |
@@ -12,7 +12,7 @@
 | Finite sums | Infinite sums |
 | Volume of regular solids | Volume of arbitrary solids | 
 
-### 1.2-1.3 Limits
+### Limits
 
 -   **Limit** - value that a function approaches: $\displaystyle \lim_{x \to c} f(x)$ 
 -   To solve:
@@ -22,7 +22,7 @@
     4.  Analyze limit
     5.  L'Hôpital's rule
 
-### 1.4 Continuity and One-Sided Limits
+### Continuity and One-Sided Limits
 
 -   **One-sided limits** approach a value from only one side, positive or negative: $\displaystyle \lim_{x \to c^+} f(x)$ or $\displaystyle \lim_{x \to c^-} f(x)$ 
 
@@ -32,7 +32,7 @@
 
 -   **Extreme Value Theorem** - a function $f$ continuous over $[a, b]$ has absolute minimum and absolute maximum over $[a, b]$
 
-### 1.5 Infinite Limits
+### Infinite Limits
 
 -   **Vertical Asymptote** - function $f$ has vertical asymptote at $c$ if $\displaystyle \lim_{x \to c^\pm} f(x) = \pm\infty$
     -   function typically undefined at $c$ $\to$ look for division by 0 etc. 
@@ -40,9 +40,9 @@
     -   function typically has decreasing rate of change towards infinity $\to$ $\displaystyle \frac{1}{x}, e^x, $ etc.
     -   function has division of similarly growing functions that "cancel" $\to$ $\displaystyle \frac{x + 2}{4x - 3}$
 
-## Unit 2: Derivatives
+## Derivatives
 
-### 2.1 Derivative Definition
+### Derivative Definition
 
 Slope of secant line of function $\to$ $\displaystyle \frac{\Delta f(x)}{\Delta x}$ $\to$ $\displaystyle \frac{f(x + \Delta x) - f(x)}{\Delta x}$  
 
@@ -65,7 +65,17 @@ x''(&t) = v'(t) = a(t)\\
 \end{align*}
 $$
 
-### 2.2-2.4 Derivative Rules
+### Derivative Rules
+
+-   **Constant Rule**: 
+$$
+\frac{d}{dx} c = 0
+$$
+
+-   **Sum Rule**: 
+$$
+\frac{d}{dx} \Big( f(x) + g(x) \Big) = f'(x) + g'(x)
+$$
 
 -   **Power Rule**: 
 $$
@@ -75,12 +85,12 @@ $$
 -   **Trigonometric Functions**:
 $$ 
 \begin{align*}
-\frac{d}{dx} \sin(x) &= \cos(x) & 
-\frac{d}{dx} \cos(x) &= -\sin(x)\\ 
-\frac{d}{dx} \tan(x) &= \sec^2(x) & 
-\frac{d}{dx} \cot(x) &= -\csc^2(x) \\
-\frac{d}{dx} \sec(x) &= \sec(x)\tan(x) & 
-\frac{d}{dx} \csc(x) &= -\csc(x)\cot(x) \\
+\frac{d}{dx} \sin x &= \cos x & 
+\frac{d}{dx} \cos x &= -\sin x\\ 
+\frac{d}{dx} \tan x &= \sec^2 x & 
+\frac{d}{dx} \cot x &= -\csc^2 x \\
+\frac{d}{dx} \sec x &= \sec x \tan x & 
+\frac{d}{dx} \csc x &= -\csc x \cot x \\
 \end{align*}
 $$
 
@@ -112,12 +122,12 @@ $$
 -   **Inverse Trigonometric**:
 $$ 
 \begin{align*}
-\frac{d}{dx} \arcsin(x) &= \frac{1}{\sqrt{1 - x^2}} & 
-\frac{d}{dx} \arccos(x) &= \frac{-1}{\sqrt{1 - x^2}}\\ 
-\frac{d}{dx} \arctan(x) &= \frac{1}{1 + x^2} & 
-\frac{d}{dx} \text{arccot}(x) &= \frac{-1}{1 + x^2} \\
-\frac{d}{dx} \text{arcsec}(x) &= \frac{1}{|u|\sqrt{x^2 - 1}} & 
-\frac{d}{dx} \text{arccsc}(x) &= \frac{-1}{|u|\sqrt{x^2 - 1}} \\
+\frac{d}{dx} \arcsin x &= \frac{1}{\sqrt{1 - x^2}} & 
+\frac{d}{dx} \arccos x &= \frac{-1}{\sqrt{1 - x^2}}\\ 
+\frac{d}{dx} \arctan x &= \frac{1}{1 + x^2} & 
+\frac{d}{dx} \text{arccot} x &= \frac{-1}{1 + x^2} \\
+\frac{d}{dx} \text{arcsec} x &= \frac{1}{|u|\sqrt{x^2 - 1}} & 
+\frac{d}{dx} \text{arccsc} x &= \frac{-1}{|u|\sqrt{x^2 - 1}} \\
 \end{align*}
 $$
 
@@ -126,7 +136,7 @@ $$
 \frac{d}{dx} f^{-1}(x) = \frac{1}{f'(f^{-1}(x))}
 $$
 
-### 2.5 Implicit Differentiation
+### Implicit Differentiation
 
 -   **Implicit Differentiation** - deriving one variable to another variable by treating it as a function of the other, applying chain rule where necessary
 $$
@@ -136,19 +146,19 @@ $$
 \end{align*}
 $$
 
-### 2.6 Related Rates
+### Related Rates
 
 -   **Related Rates** - application of implicit differentiation typically on variables related by some equation changing over time: $A = \pi r^2$, $a^2 + b^2 = c^2$, etc.
 
-## Unit 3: Derivation Application
+## Derivation Application
 
-### 3.1 Extreme Value Theorem
+### Extreme Value Theorem
 
 -   **Extreme Value Theorem** - a function $f$ continuous over $[a, b]$ has absolute minimum and absolute maximum over $[a, b]$
     -   All extrema must appear at endpoints or critical points
     -   Function $f$ has critical point at $x = c$ if $f'(c) = 0$ or $f'(c)$ undefined  
 
-### 3.2 Mean Value Theorem and Rolle's Theorem 
+### Mean Value Theorem and Rolle's Theorem 
 
 - **Mean Value Theorem** - for a function $f$ continuous from $[a, b]$ and differentiable from $(a, b)$, $\exist$ $c \in (a, b)$ such that $\displaystyle f'(c) = \frac{f(b) - f(a)}{b - a}$
     -   There exists a point on a continuous and differentiable function where the slope equals average rate of change
@@ -156,13 +166,13 @@ $$
         -   MVT where $\text{AROC} = 0$
     -   **Differentiability** - function $f$ is differentiable if $f'$ is continuous
 
-### 3.3 First Derivative Test 
+### First Derivative Test 
 
 -   **First Derivative Test** - function $f$ has relative maximum when $f'$ changes from positive to negative, and relative minimum when $f'$ changes from negative to positive
     -   **Relative Extrema** - $f'$ changes signs
     -   $f'$ can only change signs at a critical point
 
-### 3.4 Second Derivative Test and Concavity
+### Second Derivative Test and Concavity
 
 -   **Second Derivative Test** - when $f'(c) = 0$, if $f''(c) > 0$ then $x = c$ is a relative maximum of $f$, if $f''(c) < 0$ then $x = c$ is a relative minumum of $f$  
     -   **Concavity** - $f$ has upwards concavity when $ f''(x) > 0 $ and downwards concavity if $ f''(x) < 0 $
@@ -170,11 +180,11 @@ $$
     -   **Point of Infection**  - $f''$ changes signs
         -   $f''$ can only change signs at a concavity point
 
-### 3.5 Limits at Infinity
+### Limits at Infinity
 
 -   **Horizontal Asymptote** - function $f$ has horizontal asymptote at $y = c$ if $\displaystyle \lim_{x \to -\infty} f(x) = c$ or $\displaystyle \lim_{x \to \infty} f(x) = c$
 
-### 3.6 Derivatives of Position
+### Derivatives of Position
 
 $$
 \begin{align*}
@@ -185,17 +195,17 @@ $$
 $$
 -   **Speed** - $|v(t)|$, speed increases when $\text{sign}(v(t)) = \text{sign}(a(t))$ and decreases when $\text{sign}(v(t)) \ne \text{sign}(a(t))$
 
-### 8.7 L'Hôpital
+### L'Hôpital
 
 $$
 \lim_{x \to c} \frac{f(x)}{g(x)} \to \frac{0}{0} \text{ or } \frac{\pm \infty}{\pm \infty} \implies \lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f'(x)}{g'(x)}
 $$
 
-### 3.7 Optimization
+### Optimization
 
 -   **Optimization** - application of related rates, to find the minimum or maximum of an specified value. Found through derivative as all extrema must occur at a slope of 0 
  
-### 3.9 Differentials
+### Differentials
 
 -   **Differential** - treating $\displaystyle \frac{dy}{dx}$ as a fraction of two real numbers, where $dy$ and $dx$ are the differentials
 $$
@@ -227,9 +237,9 @@ $$
 
 -   **Relative Error** - error proportional to true value: $\displaystyle \% \text{error} = \frac{\epsilon}{f(x)} $ 
 
-## Unit 4: Integrals
+## Integrals
 
-### 4.1 Antiderivatives and Indefinite Integrals
+### Antiderivatives and Indefinite Integrals
 
 -   **Antiderivative** - the antiderivative of function $f(x)$ is $F(x)$ such that $F'(x) = f(x)$
     -   $\displaystyle \frac{d}{dx} \big(F(x)\big) = \frac{d}{dx} \big(F(x) + 1\big) = ... = \frac{d}{dx} \big(F(x) + c\big)$
@@ -238,22 +248,22 @@ $$
     -   Notation: $\displaystyle \sum f(x) \ \Delta x \to \int f(x) \ dx$ 
     -   Reverse chain rule, power rule
 
-### 4.2 Approximating Area 
+### Approximating Area 
 
--   **Riemann Sums** - Area under curve approximated by regular shapes
+-   **Riemann Sums** - area under curve approximated by regular shapes
     -   Left - $\displaystyle \sum f(x_i) \ \Delta x$
     -   Right - $\displaystyle \sum f(x_{i+1}) \ \Delta x$
     -   Midpoint - $\displaystyle \sum f(\frac{x_i + x_{i+1}}{2}) \ \Delta x$
     -   Trapezoid - $\displaystyle \sum \frac{f(x_i) + f(x_{i+1})}{2} \ \Delta x$
 
-### 4.3 Definite Integral
+### Definite Integral
 
 -   **Definite Integral** - evaluating integral with bounds 
 $$
 \lim_{\Delta x \to 0} \sum_{i = a}^b f(x_i) \ \Delta x = \int_a^b f(x) \ dx \\
 $$ 
 
-### 4.4 The Fundamental Theorem of Calculus
+### The Fundamental Theorem of Calculus
 
 -   **The Fundamental Theorem of Calculus** - differentiation and integration are opposites:
 $$
@@ -290,7 +300,7 @@ $$
 \end{align*}
 $$
 
-### 4.5 Integration by Substitution
+### Integration by Substitution
 
 -   **$u$-Substitution** - reverse chain rule 
     -   Must change integral bounds in terms of $u$ 
@@ -303,21 +313,21 @@ f(u) \to dy = &f'(u) \ du \\
 \end{align*}
 $$
 
-## Unit 5: Integration Application
+## Integration Application
 
-### 5.1-5.2 Logarithm Integration
+### Logarithm Integration
 
 $$
 \int \frac{1}{x} \ dx = \ln |x| + c
 $$
 
-### 5.3-5.4 Exponential Integration
+### Exponential Integration
 
 $$
 \int b^x \ dx = \frac{b^x}{\ln |b|} + c
 $$
 
-### 5.6-5.7 Inverse Trig Integration
+### Inverse Trig Integration
 
 $$ 
 \begin{align*}
@@ -327,17 +337,17 @@ $$
 \end{align*}
 $$
 
-## Unit 6: Differential Equations
+## Differential Equations
 
-### 6.1 Slope Fields
+### Slope Fields
 
 -   **Slope Field** - each point on a coordinate system represents the slope of a differential equation
 
 ![slope field image for dy/dx = y*sin x - (cos x)*e^(-cos x)](https://www.savemyexams.com/ap/maths/college-board/calculus-ab/20/revision-notes/differential-equations/first-order-differential-equations/slope-fields/)
 
--   **Euler's Method** - Iteratively determine particular solution of differential equation using multiple linear approximations: $\displaystyle f_\text{next}(x) = f(x) + \frac{dy}{dx}\Big|_{(x, y)} \Delta x$
+-   **Euler's Method** - iteratively determine particular solution of differential equation using multiple linear approximations: $\displaystyle f_\text{next}(x) = f(x) + \frac{dy}{dx}\Big|_{(x, y)} \Delta x$
 
-### 6.2 Exponential Growth and Decay
+### Exponential Growth and Decay
 
 -   Rate of change proportional to current value
 $$
@@ -350,18 +360,18 @@ $$
 
 -   **Logistic Differential Equation** - exponential growth with a load limit $L$, starting value $a$, and growth rate $k$: $\displaystyle \frac{dy}{dt} = ky(1 - \frac{y}{L})$, $\displaystyle y(t) = \frac{L}{1 + ae^{-kt}}$
 
-### 6.3 Separation of Variables
+### Separation of Variables
 
 -   Integrate differential equations with all instance of variables isolated on one side
     -   $\displaystyle \frac{dy}{dx} = xy \to \frac{dy}{y} = x dx \to \int \frac{dy}{y} = \int x \ dx$
 
-## Unit 7: Integration Application
+## Integration Application
 
-### 7.1 Area Between Curves 
+### Area Between Curves 
 
 -   Area between functions $f(x)$ and $g(x)$ where $f(x) > g(x)$ on $[a, b]$ = $\displaystyle \int_a^b \big(f(x) - g(x)\big) \ dx$
 
-### 7.2-7.3 Area of Regions
+### Area of Regions
 
 -   **Disc Method**:
 $$ 
@@ -384,7 +394,7 @@ $$
 -   **Cross Sections** - given a cross sectional area $A(y)$ as a function of $f(x)$: $\displaystyle \text{Volume} = \int A(f(x)) \ dx$
 
 
-### 7.4 Arc Length and Surface Area
+### Arc Length and Surface Area
 
 -   **Arc Length**:
 $$
@@ -401,9 +411,9 @@ $$
 \text{SA} = 2 \pi \int \Bigg(r(x) \sqrt{1 + \Big(\frac{dy}{dx}\Big)^2}\Bigg) dx 
 $$
 
-## Unit 8 Advanced Integration 
+## Advanced Integration 
 
-### 8.1 Basic Integration
+### Basic Integration
 
 -   Expand numerator
 -   Separate numerator
@@ -413,14 +423,16 @@ $$
 -   Use trig identities
 -   Multiply and divide by conjugate
 
-### 8.2 Integration by Parts
+### Integration by Parts
 
 -   **Integration by Parts**:
 $$ 
-\frac{d}{dx} \Big(f(x) \cdot g(x)\Big) = f'(x) \cdot g(x) + f(x) \cdot g'(x) \\
-d (uv) = u \ dv + v \ du \\
-u \ dv = d (uv) - v \ du \\
-\int u \ dv = uv - \int v \ du \\
+\begin{align*}
+\frac{d}{dx} \Big(f(x) \cdot g(x)\Big) &= f'(x) \cdot g(x) + f(x) \cdot g'(x) \\
+d (uv) &= u \ dv + v \ du \\
+u \ dv &= d (uv) - v \ du \\
+\int u \ dv &= uv - \int v \ du \\
+\end{align*}
 $$
 
 -   **Tabular Method**:
@@ -444,7 +456,7 @@ I = \int u \ dv &= uv - \int \Big(du \ v\Big) \\
 \end{align*}
 $$
 
-### 8.5 Partial Fractions
+### Partial Fractions
 
 -   **Partial Fraction Decomposition**:
 $$ 
@@ -457,7 +469,7 @@ A &= \frac{N}{Q(x)\big|_{x, P(x) = 0}} \\
 \end{align*}
 $$
 
-### 8.6 Trig Substitution
+### Trig Substitution
 
 -   **Trig Substitution** - using trig identities to replace radicals with known trig function:
 $$
@@ -468,14 +480,14 @@ $$
 \end{align*}
 $$
 
-### 8.8 Improper Integrals 
+### Improper Integrals 
 
 -   **Improper Integrals** - integrals that contain value within bounds that are undefined in the integrand
     -   $\displaystyle \int_0^\infty f(x) \ dx \to \lim_{b \to \infty} \int_0^b f(x) \ dx \to \lim_{b \to \infty} \Big[F(x)\Big|_0^b \to \lim_{b \to \infty} F(b) - F(0)$
 
-## Unit 9 Infinite Sequences and Series
+## Infinite Sequences and Series
 
-### 9.1 Sequences 
+### Sequences 
 
 -   **Sequence** - a function whose domain is $\mathbb{N}$
 
@@ -489,7 +501,7 @@ $$
 
 -   **Bounded** - bounded above if all terms $\le$ constant $c$ and bounded below if all terms $\ge c$ 
 
-### 9.2 Infinite Series 
+### Infinite Series 
 
 -   **Series** - sum of first $n$ terms of sequence: $\displaystyle \sum_{i = 1}^n a_i$
     -   **Infinite Series** - sum of all terms in a sequence: $\displaystyle \sum_{n}^\infty a_n$
@@ -497,7 +509,7 @@ $$
         -   **Divergence** - sum does not have a limit at infinity
 
 
-### 9.2 - 9.6 Convergence Tests 
+### Convergence Tests 
 
 -   **Telescoping Series** - series with terms canceling, leaving a finite sum
     -   Often requires partial fraction decomposition
@@ -540,7 +552,7 @@ $$
     -   Converges if $\displaystyle \lim_{n \to \infty} \sqrt[n]{|a_n|} < 1$
     -   Diverges if $\displaystyle \lim_{n \to \infty} \sqrt[n]{|a_n|} > 1$
 
-### 9.7 Taylor Polynomials and Approximation
+### Taylor Polynomials and Approximation
 
 -   Linear approximation as a first degree polynomial approximation $\to$ matches value and slope at point
 -   **Taylor Polynomial** - approximation at $x = c$:
@@ -554,10 +566,10 @@ $$
 
 -   **Lagrange Error Bound** - difference between function Taylor polynomial approximation:
 $$
-|f(x) - P_n(x)| = \frac{\displaystyle \max_{[c, x]}\big|f^{n + 1(x)}\big|}{(n + 1)!} (x - c)^{n + 1}
+|f(x) - P_n(x)| = \frac{\displaystyle \max_{[c, x]}\big|f^{n + 1}(x)\big|}{(n + 1)!} (x - c)^{n + 1}
 $$
 
-### 9.8 Power Series
+### Power Series
 
 -   **Power Series** - infinite polynomial approximation centered at $x = c$:
 $$
@@ -574,7 +586,7 @@ $$
 -   Series derives and antiderives with respect to $x$, treating $n$ as a real number
     -   Derivative and antiderivative have same bounds, but inclusivity must be rechecked
 
-### 9.9 Functions as Power Series
+### Functions as Power Series
 
 -   Function into geometric series:
 $$
@@ -584,7 +596,7 @@ $$
 \end{align*}
 $$
 
-### 9.10 Taylor Series
+### Taylor Series
 
 -   **Taylor Series** - infinite polynomial approximation of a function centered at $x = c$:
 $$
@@ -605,9 +617,9 @@ $$
 
 -   Function composition works within power series: $\displaystyle e^{2x} = \sum_{n = 0}^\infty \frac{(2x)^n}{n!}$
 
-## Unit 10: Polar, Parametric, and Vector Functions
+## Polar, Parametric, and Vector Functions
 
-### 10.1 - 10.3 Parametric Equations 
+### Parametric Equations 
 
 -   **Parametric Equations** - sets of equations with more than one dependent variable, independent usually being time $t$
     -   Derivative where curve is given by $x = f(t)$ and $y = g(t)$: $\displaystyle \frac{dy}{dx} = \frac{dy/dt}{dx/dt}$
@@ -622,7 +634,7 @@ $$
 
 -   **Arc Length** - $\displaystyle \int \sqrt{(x(t))^2 + (y(t))^2} dt$
 
-### 10.4-10.5 Polar Functions
+### Polar Functions
 
 -   **Polar Coordinates** - point on plane represented by radial distance $r$ and angle $\theta$ instead of $x$ and $y$
     -   $r = \sqrt{x^2 + y^2}$
@@ -641,3 +653,184 @@ dA_S = \frac{1}{2} r^2 d\theta \\
 A = \frac{1}{2} \int r^2 d\theta
 \end{align*}
 $$
+
+## Vectors and Space
+
+### Vectors
+
+-   **Scalar** - real number, 0 dimensional, magnitude without direction
+-   **Vector** - directed segment, with direction and magnitude
+    -   **Magnitude** - length of vector: $|\vec{v}|$
+    -   **Equivalence** - same direction and magnitude
+    -   **Parallelism** - vectors with the same direction, scalar multiples of each other, cross product of $\vec{0}$
+        -   $\vec{0}$ is parallel to all vectors
+    -   **Orthogonality** - vectors with the perpendicular direction, dot product of 0
+        -   $\vec{0}$ is orthogonal to all vectors
+    -   **Position Vectors** - standard form of vector, with tail at origin, written: $\langle v_1, v_2, ..., v_n \rangle$
+        -   $v_1, v_2, v_3$ are the $x$-component, $y$-component, and $z$-component of vectors in $\mathbb{R}^3$
+-   **Unit Vectors** - vector with length $1$, represented with $\hat{u}$
+    -   **Coordinate Unit Vectors** - $\hat{i} = \langle 1, 0, 0 \rangle$, $\hat{j} = \langle 0, 1, 0 \rangle$,  $\hat{k} = \langle 0, 0, 1 \rangle$
+        -   vector $\vec{u} = \langle u_1, u_2, u_3 \rangle = u_1\hat{i} + u_2\hat{j} + u_3\hat{k}$
+    -   vector with length $|\vec{u}|$ and angle $\theta$ in $\mathbb{R}^2$: $|\vec{v}|\langle \cos \theta, \sin \theta \rangle$
+### Vector Operations 
+-   **Vector Addition**:
+$$
+\vec{u} + \vec{v} = \langle u_1 + v_1, u_2 + v_2, ..., u_n + v_n \rangle
+$$
+-   **Vector Subtraction**:
+$$
+\vec{u} - \vec{v} = \langle u_1 - v_1, u_2 - v_2, ..., u_n - v_n \rangle
+$$
+-   **Scalar Multiplication**
+$$
+c\vec{u} = \langle cu_1, cu_2, ..., cu_n \rangle
+$$
+-   **Dot Product** - how much of a vector is pointing along another - given two vectors $\vec{u}$ and $\vec{v}$ with angle $\theta \in [0, \pi]$:
+$$
+\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|\cos \theta \\
+\text{or} \\
+\vec{u}\cdot\vec{v} = u_1v_1 + u_2v_2 + ... + u_nv_n 
+$$
+    -   by law of cosines, 
+$$
+\begin{align*}
+|\vec{u} - \vec{v}|^2 &= |\vec{u}|^2 + |\vec{v}|^2 - 2|\vec{u}||\vec{v}|\cos \theta \\
+2|\vec{u}||\vec{v}|\cos \theta &= |\vec{u}|^2 + |\vec{v}|^2 - |\vec{u} - \vec{v}|^2 \\
+2\vec{u} \cdot \vec{v} &= |\vec{u}|^2 + |\vec{v}|^2 - |\vec{u} - \vec{v}|^2 \\
+2\vec{u} \cdot \vec{v} &= u_1^2 + u_2^2 + v_1^2 + v_2^2 - (u_1 + v_1)^2 - (u_2 + v_2)^2 \\
+2\vec{u} \cdot \vec{v} &= 2u_1v_1 + 2u_2v_2 \\
+\vec{u} \cdot \vec{v} &= u_1v_1 + u_2v_2 \\
+\end{align*}
+$$
+    -   returns a scalar, vectors are parallel if $\vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|$, and perpendicular or orthogonal if $\vec{u} \cdot \vec{v} = 0$ 
+    -   $\displaystyle \cos(\theta) = \frac{\vec{u} \cdot \vec{v}}{|\vec{u}||\vec{v}|}$
+    -   Properties
+        -   Commutative: $\vec{u} \cdot \vec{v} = \vec{v} \cdot \vec{u}$
+        -   Associative: $(\vec{u} \cdot \vec{v}) \cdot \vec{w} =\vec{u} \cdot (\vec{v} \cdot \vec{w})$
+        -   Distributive: $\vec{u} \cdot (\vec{v} + \vec{w}) = \vec{u} \cdot \vec{v} + \vec{v} \cdot \vec{w}$
+    -   **Work** - $W = \vec{F} \cdot \vec{d}$
+-   **Magnitude**:
+$$
+\begin{align*}
+|\vec{u}| &= \sqrt{u_1^2 + u_2^2 + ... + u_n^2} \\
+&\text{ or} \\
+|\vec{u}| &= \sqrt{\vec{u} \cdot \vec{u}}
+\end{align*}
+$$
+-   **Projection** - vector projection of $\vec{u}$ on $\vec{v}, \vec{v} \ne 0$:
+$$
+\begin{align*}
+\text{proj}_{\vec{v}} \vec{u} &= |\vec{u}|\cos \theta \frac{\vec{v}}{|\vec{v}|} \\
+\text{proj}_{\vec{v}} \vec{u} &= \text{scal}_{\vec{v}} \vec{u} \frac{\vec{v}}{|\vec{v}|} \\
+\text{proj}_{\vec{v}} \vec{u} &= \frac{\vec{u} \cdot \vec{v}}{\vec{v} \cdot \vec{v}}
+\end{align*}
+$$
+-   **Scale** - length of projection of $\vec{u}$ on $\vec{v}, \vec{v} \ne 0$:
+$$
+\begin{align*}
+\text{scal}_{\vec{v}} \vec{u} &= |\vec{u}|\cos \theta \\
+\text{scal}_{\vec{v}} \vec{u} &= |\text{proj}_{\vec{v}} \vec{u}| \\ 
+\text{scal}_{\vec{v}} \vec{u} &= \frac{\vec{u} \cdot \vec{v}}{|\vec{v}|}
+\end{align*}
+$$
+-   **Cross Product** - vector with length of parallelogram formed by two vectors pointed orthogonally given by right-hand rule, given two vectors $\vec{u}$ and $\vec{v}$ with angle $\theta \in [0, \pi]$:
+$$
+\begin{align*}
+|\vec{u} \times \vec{v}| &= |\vec{u}||\vec{v}|\sin \theta \\
+\vec{u} \times \vec{v} &= 
+\begin{vmatrix}
+    \hat{i} & \hat{j} & \hat{k} \\
+    u_1 & u_2 & u_3 \\
+    v_1 & v_2 & v_3 \\
+\end{vmatrix}
+\end{align*}
+$$    
+    -   Properties
+        -   Anticommutative: $\vec{u} \times \vec{v} = -(\vec{v} \times \vec{u})$
+        -   Distributive: $\vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{v} \times \vec{w}$ and $(\vec{u} + \vec{v}) \times \vec{w} = \vec{u} \times \vec{w} + \vec{v} \times \vec{w}$
+    -   **Torque** - torque $\vec{\tau}$ given pivot $\vec{r}$ and force $\vec{F}$: $\vec{\tau} = \vec{r} \times \vec{F}$
+    -   **Magnetic Force** - force $\vec{F}$ given charge $q$ and velocity of moving charge $\vec{v}$ and magnetic field $\vec{B}$: $\vec{F} = q(\vec{v} \times \vec{B})$
+
+### Space 
+
+-   **Sphere** - all points $(x, y, z)$ in 3 dimensions with distance $r$ to center at $(x_0, y_0, z_0)$, equation given by $(x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2 = r^2$ 
+-   **Line** - line with fixed point at $(x_0, y_0, z_0)$ and points along $(a, b, c)$, its equation is given by $\langle x, y, z \rangle = \langle x_0, y_0, z_0 \rangle + t\langle a, b, c \rangle$ for $t \in \mathbb{R}$
+    -   $\vec{r} = \vec{r_0} + t\vec{v}$ for $t \in \mathbb{R}$
+    -   **Distance to Point** - point $Q$ distance to line at point $Q'$ given point $P$ on line with direction $\vec{v}$ is height of parallelogram formed of $P, Q, P + \vec{v}$: $|PQ'| = |\vec{v} \times |\overrightarrow{PQ}|$
+-   **Plane** - plane is defined with 3 noncollinear points, or a point $P$ and a normal vector $\vec{n}$. Any point $P_0$ on plane must be orthogonal to normal vector, so $\vec{n} \cdot \overrightarrow{P_0 P} = 0$. 
+$$
+\begin{align*}
+\vec{n} &= \langle a, b, c \rangle \\
+\overrightarrow{P_0 P} &= \langle x - x_0, y - y_0, z - z_0 \rangle \\
+\vec{n} \cdot \overrightarrow{P_0 P} &= 0 \\
+a(x - x_0) + b(y - y_0) + c(z - z_0) &= 0 \\
+ax + by + cz &= ax_0 + by_0 + cz_0 \\
+ax + by + cz &= d
+\end{align*}
+$$
+    -   **Trace** - line where plane intersects coordinate plane
+    -   **Parallelism** - planes are parallel if their normal vectors are parallel, $\vec{n_1} = c\vec{n_2}$
+    -   **Orthogonality** - planes are parallel if their normal vectors are parallel, $\vec{n_1} = c\vec{n_2}$
+-   **Cylinders** - projection of a 2 dimensional line onto a third parallel coordinate line, missing a variable
+-   **Quadric Surface** - second degree equation of three variables, with general form: $Ax^2 + By^2 + Cz^2 + Dxy + Exz + Fyx + Gx + Hy + Iz + J = 0$
+    -   **Ellipsiod**: 
+    $$\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$$
+    -   **Elliptic Paraboloid**: 
+    $$\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} = z$$
+    -   **Hyperboloid of One Sheet**: 
+    $$\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} - \frac{z^2}{c^2} = 1$$
+    -   **Hyperboloid of Two Sheet**: 
+    $$\displaystyle \frac{x^2}{a^2} - \frac{y^2}{b^2} - \frac{z^2}{c^2} = 1$$
+    -   **Elliptic Cone**: 
+    $$\displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} = \frac{z^2}{c^2}$$
+    -   **Hyperboloid Paraboloid**: 
+    $$\displaystyle \frac{x^2}{a^2} - \frac{y^2}{b^2} = z$$
+
+### Vector Valued Functions
+
+-   **Space Curve** - defined by parametric equations: $x = f(t), y = g(t), z = h(t)$, or $\vec{r}(t) = \langle f(t), g(t), h(t) \rangle$
+    -   **Domain** - set intersection of all domains of components
+    -   **Limit** - $\displaystyle \lim_{t \to a} \vec{r}(t) = \langle \lim_{t \to a} f(t), \lim_{t \to a} g(t), \lim_{t \to a} h(t) \rangle$ 
+    -   **Continuity** - vector valued function $\vec{r}(t)$ is continuous at point $t = a$ if $\displaystyle \lim_{t \to a} \vec{r}(t)$ exists and $\displaystyle \lim_{t \to a} \vec{r}(t) = \vec{r}(a)$
+        -   vector valued function $\vec{r}(t)$ is continuous over interval $I$ if it is continuous at each point $t= a \in I$
+    - **Tangent Vector** - $\displaystyle \vec{r}'(t) = \lim_{\Delta t \to 0} \frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t}$
+        -   derivative of $\vec{r}(t)$ with respect to $t$
+        -   gives rate of change at point at $t$
+        -   $\vec{r}(t)$ is differentiable on open interval $I$ if its components are differentiable on $I$, and its derivative on $I$ is $\vec{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle$ 
+    -   **Unit Tangent Vector** - unit tangent vector for value of $t$ on curve $\vec{r}(t)$ is $\displaystyle \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}$
+    -   **Indefinite Integral** - with $\vec{r}(t) = \langle f(t), g(t), h(t) \rangle$, $\vec{R}(t) = \langle F(t), G(t), H(t) \rangle$  $\displaystyle \int \vec{r}(t) dt = R(t) + \vec{C}$, where $\vec{C}$ is an arbitrary vector with constant components
+    -   **Definite Integral** - $\displaystyle \int_a^b \vec{r}(t) dt = \langle \int_a^b f(t) dt, \int_a^b g(t) dt, \int_a^b h(t) dt \rangle$ if $f$, $g$, $h$ are intergrable on $[a, b]$
+
+### Derivative Rules
+
+-   **Constant Rule**: 
+$$
+\frac{d}{dx} \vec{c} = \vec{0}
+$$
+
+-   **Sum Rule**: 
+$$
+\frac{d}{dx} \Big( \vec{u}(t) + \vec{v}(t) \Big) = \vec{u}'(t) + \vec{v}'(t)
+$$
+
+-   **Product Rule**: 
+$$
+\frac{d}{dx} \Big( f(t) \vec{u}(t) \Big) = f'(t)\vec{u}(t) + f(t)\vec{u}'(t)
+$$
+
+-   **Chain Rule**: 
+$$
+\frac{d}{dx} \vec{u}(f(t)) = \vec{u}'(f(t))f'(t)
+$$
+
+-   **Dot Product Rule**: 
+$$
+\frac{d}{dx} \Big( \vec{u}(t) \cdot \vec{v}(t) \Big) = \vec{u}'(t) \cdot \vec{v}(t) + \vec{u}(t) \cdot \vec{v}'(t)
+$$
+
+-   **Cross Product Rule**: 
+$$
+\frac{d}{dx} \Big( \vec{u}(t) \times \vec{v}(t) \Big) =\vec{u}'(t) \times \vec{v}(t) + \vec{u}(t) \times \vec{v}'(t)
+$$
+
+
