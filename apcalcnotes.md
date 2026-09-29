@@ -640,7 +640,7 @@ $$
     -   $r = \sqrt{x^2 + y^2}$
     -   $\theta = \arctan(\frac{y}{x})$
 
--   Polar function $r = f(\theta)$, $\theta$ can be treated as parameter of $x$ and $y$
+-   Polar function $r = f(\theta)$, $\theta$ can be treated as parameter of $x$ and $y$, $x(\theta) = r\cos(\theta)$, $y(\theta) = r\sin(\theta)$
     -   Derivative: $\displaystyle \frac{dy}{dx} = \frac{dy/d\theta}{dx/d\theta}$
     -   Area bounded by polar curve: 
 
@@ -648,7 +648,6 @@ $$
 \begin{align*}
 A_C = \pi r^2 \\
 A_C = \frac{1}{2} (\theta = 2 \pi) r^2 \\
-A_S = \frac{1}{2} \theta r^2 \\
 dA_S = \frac{1}{2} r^2 d\theta \\
 A = \frac{1}{2} \int r^2 d\theta
 \end{align*}
