@@ -798,7 +798,9 @@ $$
         -   $\vec{r}(t)$ is differentiable on open interval $I$ if its components are differentiable on $I$, and its derivative on $I$ is $\vec{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle$ 
     -   **Unit Tangent Vector** - unit tangent vector for value of $t$ on curve $\vec{r}(t)$ is $\displaystyle \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}$
     -   **Indefinite Integral** - with $\vec{r}(t) = \langle f(t), g(t), h(t) \rangle$, $\vec{R}(t) = \langle F(t), G(t), H(t) \rangle$  $\displaystyle \int \vec{r}(t) dt = R(t) + \vec{C}$, where $\vec{C}$ is an arbitrary vector with constant components
-    -   **Definite Integral** - $\displaystyle \int_a^b \vec{r}(t) dt = \langle \int_a^b f(t) dt, \int_a^b g(t) dt, \int_a^b h(t) dt \rangle$ if $f$, $g$, $h$ are intergrable on $[a, b]$
+    -   **Definite Integral** - $\displaystyle \int_a^b \vec{r}(t) dt = \bigg\langle \int_a^b f(t) dt, \int_a^b g(t) dt, \int_a^b h(t) dt \bigg\rangle$ if $f$, $g$, $h$ are intergrable on $[a, b]$
+    -   **Motion** - if $\vec{r}(t)$ represents position, then $\vec{v}(t) = \vec{r}'(t)$ represents velocity, $\vec{a}(t) = \vec{v}'(t) = \vec{r}''(t)$ represents acceleration, and $|\vec{v}(t)|$ is speed
+        -   **Gravity** - force due to gravity typically $\vec{F} = m\vec{a}$, with $\vec{a} = \langle 0, 0, -g \rangle$ 
 
 ### Derivative Rules
 
