@@ -1,16 +1,14 @@
-# Calculus Notes
-
 ## Limits
 
 ### Calculus Principles
 
-| Without Calculus | With Calculus |
-| --- | --- |
-| Approximate area using rectangles | Exact area under curve |
-| Average rate of change | Instantaneous rate of change |
-| Length of line segments | Length of arcs |
-| Finite sums | Infinite sums |
-| Volume of regular solids | Volume of arbitrary solids | 
+| Without Calculus                  | With Calculus                |
+| --------------------------------- | ---------------------------- |
+| Approximate area using rectangles | Exact area under curve       |
+| Average rate of change            | Instantaneous rate of change |
+| Length of line segments           | Length of arcs               |
+| Finite sums                       | Infinite sums                |
+| Volume of regular solids          | Volume of arbitrary solids   |
 
 ### Limits
 
@@ -160,9 +158,9 @@ $$
 
 ### Mean Value Theorem and Rolle's Theorem 
 
-- **Mean Value Theorem** - for a function $f$ continuous from $[a, b]$ and differentiable from $(a, b)$, $\exist$ $c \in (a, b)$ such that $\displaystyle f'(c) = \frac{f(b) - f(a)}{b - a}$
+- **Mean Value Theorem** - for a function $f$ continuous from $[a, b]$ and differentiable from $(a, b)$, $\exists$ $c \in (a, b)$ such that $\displaystyle f'(c) = \frac{f(b) - f(a)}{b - a}$
     -   There exists a point on a continuous and differentiable function where the slope equals average rate of change
-    -   **Rolle's Theorem** - for a function $f$ continuous from $[a, b]$, differentiable from $(a, b)$, and $f(a) = f(b)$, $\exist$ $c \in (a, b)$ such that $f'(c) = 0$
+    -   **Rolle's Theorem** - for a function $f$ continuous from $[a, b]$, differentiable from $(a, b)$, and $f(a) = f(b)$, $\exists$ $c \in (a, b)$ such that $f'(c) = 0$
         -   MVT where $\text{AROC} = 0$
     -   **Differentiability** - function $f$ is differentiable if $f'$ is continuous
 
@@ -797,10 +795,25 @@ $$
         -   gives rate of change at point at $t$
         -   $\vec{r}(t)$ is differentiable on open interval $I$ if its components are differentiable on $I$, and its derivative on $I$ is $\vec{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle$ 
     -   **Unit Tangent Vector** - unit tangent vector for value of $t$ on curve $\vec{r}(t)$ is $\displaystyle \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}$
+    -   **Principal Unit Normal Vector** - vector normal to unit tangent vector, $\displaystyle \vec{N}(t) = \frac{\vec{T}'(t)}{|\vec{T}'(t)|}$
+    -   **Unit Binormal Vector** - describes direction of torsion, $\displaystyle \vec{B} = \vec{T} \times \vec{N}$
+        -   **Torsion** - how fast curve moves out of osculating plane of $\vec{T}$ and $\vec{N}$, represented by $\displaystyle \tau = \frac{(\vec{v} \times \vec{a}) \cdot \vec{a}'}{|\vec{v} \times \vec{a}|^2}$
     -   **Indefinite Integral** - with $\vec{r}(t) = \langle f(t), g(t), h(t) \rangle$, $\vec{R}(t) = \langle F(t), G(t), H(t) \rangle$  $\displaystyle \int \vec{r}(t) dt = R(t) + \vec{C}$, where $\vec{C}$ is an arbitrary vector with constant components
     -   **Definite Integral** - $\displaystyle \int_a^b \vec{r}(t) dt = \bigg\langle \int_a^b f(t) dt, \int_a^b g(t) dt, \int_a^b h(t) dt \bigg\rangle$ if $f$, $g$, $h$ are intergrable on $[a, b]$
     -   **Motion** - if $\vec{r}(t)$ represents position, then $\vec{v}(t) = \vec{r}'(t)$ represents velocity, $\vec{a}(t) = \vec{v}'(t) = \vec{r}''(t)$ represents acceleration, and $|\vec{v}(t)|$ is speed
         -   **Gravity** - force due to gravity typically $\vec{F} = m\vec{a}$, with $\vec{a} = \langle 0, 0, -g \rangle$ 
+        -   **Acceleration** - acceleration can be in direction of travel or can be twisting, $\vec{a} = a_N \vec{N} + a_T \vec{T}$ where $\displaystyle a_N = \frac{|\vec{v} \times \vec{a}|}{|\vec{v}|}$ and $\displaystyle a_T = \frac{\vec{v} \cdot \vec{a}}{|\vec{v}|}$
+    -   **Arc Length** - represents distance
+$$
+\begin{align*}
+|\vec{r}| &= \sqrt{r_0^2 + r_1^2 + ... + r_n^2} \\
+L &= \int |\vec{r}'(t)| dt = \int \sqrt{(dr_0)^2 + (dr_1)^2 + ... + (dr_n)^2} \ dt \\
+s(t) &= \int_a^t |\vec{r}(t)| dt \\
+\end{align*}
+$$
+        -   **Arc Length as Parameter** - if $\displaystyle \frac{ds}{dt} = |\vec{r}'(t)|= 1$, then $t$ corresponds to $s$
+    -   **Curvature** - represents how fast direction changes, $\displaystyle \kappa = \frac{|\vec{v} \times \vec{a}|}{|\vec{v}|^3} = \bigg|\frac{\vec{T}'(t)}{\vec{r}'(t)}\bigg|$
+
 
 ### Derivative Rules
 
@@ -833,3 +846,20 @@ $$
 $$
 \frac{d}{dx} \Big( \vec{u}(t) \times \vec{v}(t) \Big) =\vec{u}'(t) \times \vec{v}(t) + \vec{u}(t) \times \vec{v}'(t)
 $$
+
+### Multivariable Functions
+
+-   **Multivariable Function** - a function $f$ with inputs of multiple variables, mapping each point to an output on $\mathbb{R}$ 
+    -   **Domain** - each point of variables for which $f$ is defined 
+    -   **Range** - every value $f$ attains 
+    -   **Vertical Line Test** - graph of function must pass vertical line test to be considered function
+    -   **Level Curve** - intersection of surface and plane $z = z_0$ at equal values of $z_0$
+        -   **Level Surface** - intersection of volume and space at $z = z_0$  
+    -   **Limit** - approaches point from all directions, if value of $\displaystyle \lim_{(x, y) \to (x_0, y_0)} f(x, y)$ is not same for all paths, limit does not exist
+        -   **Continuity** - function $f$ is continuous at $(a, b)$ if $f$ is defined at $(a, b)$, $\displaystyle \lim_{(x, y) \to (a, b)} f(x, y)$ exists, $\displaystyle \lim_{(x, y) \to (a, b)} f(x, y) = f(a, b)$
+    -   **Partial Derivatives** - derivative of $f(x, y)$ with respect to $x$ while keeping $y$ constant is a derivative treating y as a constant, $\displaystyle f_x(x, y) = \frac{\partial f}{\partial x} = \lim_{h \to 0} \frac{f(a + h, b) - f(a, b)}{h}$
+        -   **Mixed Partials** - $\displaystyle \frac{\partial f^2}{\partial x \partial y} = \frac{\partial f^2}{\partial y \partial x}$, $f_{xy} = f_{yx}$
+-   **Chain Rule** - derivative of each new variable function requires its derivaties with respect to its parameters
+    -   **Implicit Differentiation** - function $F(x, y) = 0$, $\displaystyle \frac{dy}{dx} = -\frac{F_x}{F_y}$ 
+-   **Gradient** - gradient of $f(x, y)$ represents direction of greatest ascent at each point $(x, y)$, with magnitude being slope, $\nabla f(x, y) = \langle f_x(x, y), f_y(x, y) \rangle$
+    -   **Directional Derivative** - with direction unit vector $\vec{u}$, derivative along $\vec{u}$ is $D_{\vec{u}} f(a, b) = \nabla f \cdot \vec{u}$
