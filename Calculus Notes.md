@@ -863,3 +863,34 @@ $$
     -   **Implicit Differentiation** - function $F(x, y) = 0$, $\displaystyle \frac{dy}{dx} = -\frac{F_x}{F_y}$ 
 -   **Gradient** - gradient of $f(x, y)$ represents direction of greatest ascent at each point $(x, y)$, with magnitude being slope, $\nabla f(x, y) = \langle f_x(x, y), f_y(x, y) \rangle$
     -   **Directional Derivative** - with direction unit vector $\vec{u}$, derivative along $\vec{u}$ is $D_{\vec{u}} f(a, b) = \nabla f \cdot \vec{u}$
+    - Tangent lines to level curves $f = c$ are normal to gradient
+- **Tangent Plane** - gradient at a point is normal to level curve, which functions as the plane's defining vector, $0 = \nabla F(x, y, z) \cdot \overrightarrow{P_0P}$
+	- **Linear Approximation** - at point $P_0$, $L(x, y, z) \implies L(P) = \nabla F(P) \cdot \overrightarrow{P_0P} + F(P)$, $L(x, y, z) = f_x(a, b, c)(x - a) + f_y(a, b, c)(y - b) + f_z(a, b, c)(z - c) + f(a, b, c)$
+	- **Differentials** - if $x$ changes by $\Delta x$, $y$ changes by $\\displaystyle \approx f'(x) \Delta x = \frac{dy}{dx} \Delta x$, improving as $\Delta x \to 0 = dx$ 
+		- A change in $z$ would be $f_xdx + f_ydy$
+- **Local Extrema** - if $f(x, y) \le f(a, b) \forall (x, y)$ in domain of $f$ and in some open disk centered at $(a, b)$, $f(a, b)$ is a local maximum, if $f(x, y) \ge f(a, b) \forall (x, y)$ in domain of $f$ and in some open disk centered at $(a, b)$, $f(a, b)$ is a local minimum
+	- Tangent plane must be horizontal at a local extrema if it exists
+	- Critical points are when all directional derivatives equal 0 or any does not exist
+	- **Second Derivative Test** - tests critical points for local extrema
+		- **Saddle Point** - some directions increase while others decrease with no overall slope
+$$
+D(x, y) = 
+\begin{vmatrix}
+    f_{xx} & f_{xy} \\
+    f_{yx} & f_{yy} \\
+\end{vmatrix}
+= f_{xx} \cdot f_{yy} - f_{xy}^2
+$$
+$$
+\begin{align*}
+D(a, b) > 0, f_{xx} > 0 &\implies \text{local minimum at } (a, b) \\
+D(a, b) > 0, f_{xx} < 0 &\implies \text{local maximum at } (a, b) \\
+D(a, b) < 0 &\implies \text{saddle point at } (a, b) \\
+D(a, b) = 0  &\implies \text{inconclusive at } (a, b) \\
+\end{align*}
+$$
+	- **Lagrange Multipliers** - finds extrema of $f(x, y)$ based on constraint function $g(x, y)$, by finding level curve of $f$ that changes direction on $g$, meaning their gradients are equal at that point - $\nabla f(x, y) = \lambda \nabla g(x, y), g(x, y) = 0$
+- **Multiple Integration** - infinite sum of higher dimensional volume of infinitesimal boxes, $\displaystyle \iint_R f(x, y)dA = \int_a^b \int_c^d f(x, y) dy dx = \int_c^d \int_a^b f(x, y) dx dy$ 
+	- **Average Value** - $\displaystyle \frac{\iint_R f(x, y)dA}{A}$
+	- In polar coordinates $\displaystyle \iint_R f(x, y)dA = \int_\alpha^\beta \int_a^b f(r\cos\theta, r\sin\theta)rdrd\theta$ 
+	- $a, b$ can be functions of $x$ or $\theta$ for generalized regions
